@@ -64,8 +64,8 @@ void main()
 {
 	int gd=DETECT,gm,choice;
 	initgraph(&gd,&gm,"..\\BGI");
-	float xc,x1,x2,y1,y2,yc,y,x,t,s,r;
-	printf("Enter the 1. for line \n 2. for a circle:\n");
+	float xc,x1,x2,y1,y2,yc;
+	printf("Enter \n 1. for line \n 2. for a circle:\n");
 	scanf("%d",&choice);
 	printf("DARREL SEAN DSOUZA 20PMC03:\n");
 	switch(choice)
