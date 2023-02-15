@@ -1,6 +1,6 @@
 #include<conio.h>
 #include<graphics.h>
-#include<iostream.h>
+#include<stdio.h>
 #include<dos.h>
 #include<stdlib.h>
 void boundaryFill(int x, int y, int sColor, int bColor) {
@@ -15,10 +15,11 @@ void boundaryFill(int x, int y, int sColor, int bColor) {
 void main() {
 	int gd= DETECT,gm,x,y,r;
 	initgraph(&gd,&gm,"..\\BGI");
-	cout<<"Enter circle centre points and radius";
-	cin>>x>>y>>r;
+	printf("Enter circle centre points and radius");
+	scanf("%d%d%d",&x,&y,&r);
 	circle(x,y,r);
 	boundaryFill(x,y,6,15);
 	getch();
 	closegraph();
 }
+
