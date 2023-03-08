@@ -12,7 +12,7 @@ void triangle(int x1,int y1,int x2,int y2,int x3,int y3)
 	line(x2,y2,x3,y3);
 	line(x3,y3,x1,y1);
 }
-void translate(int x1,int y1,int x2,int y2,int x3,int y3,int tx,int ty)
+void scale(int x1,int y1,int x2,int y2,int x3,int y3,int tx,int ty)
 {
 	triangle(x1,y1,x2,y2,x3,y3);
 	x1=x1*tx;
@@ -38,7 +38,7 @@ void main()
 	printf("Enter the scaling  factor :\n");
 	scanf("%d%d",&tx,&ty);
 	printf("DARREL SEAN DSOUZA 20PMC03:\n");
-	translate(x1,y1,x2,y2,x3,y3,tx,ty);
+	scale(x1,y1,x2,y2,x3,y3,tx,ty);
 	getch();
 	closegraph();
 }
